@@ -1,0 +1,22 @@
+api:
+    address: llmcluster.embeddedllm.com
+    port: 8000
+
+envs:
+    VLLM_USE_TRITON_FLASH_ATTN: false
+    VLLM_ROCM_USE_AITER: true
+
+model:
+    model_name: Qwen/Qwen2-VL-7B-Instruct
+    args: --served-model-name Qwen/Qwen2-VL-7B-Instruct --max-model-len 32768 --quantization ptpc_fp8 --kv-cache-dtype fp8
+
+resources:
+    cpus: 8
+    memory: 32
+    ports: 8000
+    accelerators: MI300X:1
+    image_id: docker:ghcr.io/embeddedllm/vllm-rocm:v0.8.2-18ed313
+
+service:
+    ports: 8000
+    readiness_probe: /v1/models
