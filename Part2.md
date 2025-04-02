@@ -94,27 +94,28 @@ Example Provisioning Response:
 {"detail":"No ready replicas. Use \"sky serve status [SERVICE_NAME]\" to check the replica status."}
 ```
 
-5. Sign-up JamAI Base
+# Creat GenAI Use case with JamAI Base
+1. Sign-up JamAI Base
 
-6. Go to the organization Tab
+2. Go to the organization Tab
     i. Get your Org ID
     ![Get your org id](image2/orgid.png)
     ii. Create API Key
     ![Create Org API Key](image2/create_org_apikey.png)
 
-7. Go to https://llmendpoint.embeddedllm.com/
+3. Go to https://llmendpoint.embeddedllm.com/
 
 Login details:
 * user
 * vllmSGmeetup2025
 
-8. Key in your Org ID and API Key 
+4. Key in your Org ID and API Key 
 
-![alt text](image.png)
+    ![alt text](image2/add_orgid_apikey.png)
 
-9. Now, `Add new LLM Model`
+5. Now, `Add new LLM Model`
 
-10. Fill up the following fields:
+6. Fill up the following fields:
 
 * ID: ellm/Qwen/Qwen2-VL-7B-Instruct
 * Name: Qwen2-VL-7B-Instruct
@@ -130,12 +131,12 @@ Login details:
 * Input Cost/mtoken: 0.00001
 * Output Cost/mtoken: 0.00001
 
-![Model Patch Configuration](./image2/model_patch_image.png)
+    ![Model Patch Configuration](./image2/model_patch_image.png)
 
-11. Create a New Action Table.
+7. Create a New Action Table.
 
-![Create New Action Table](./image2/create_new_action_table.png)
+    ![Create New Action Table](./image2/create_new_action_table.png)
 
-12. You can now find the model in the model list.
+8. You can now find the model in the model list.
 
-![The model name will be in the model list](image2/model_list.png)
+    ![The model name will be in the model list](image2/model_list.png)
