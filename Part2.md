@@ -94,7 +94,7 @@ Example Provisioning Response:
 {"detail":"No ready replicas. Use \"sky serve status [SERVICE_NAME]\" to check the replica status."}
 ```
 
-# Creat GenAI Use case with JamAI Base
+# Creat GenAI Use Case with JamAI Base
 1. Sign-up JamAI Base
 
 2. Go to the organization Tab
