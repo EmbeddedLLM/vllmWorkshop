@@ -39,9 +39,7 @@ vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-32B \
 ````
 
 Here, we need to configure the port number according to the current network environment settings. For Hot Isle servers, port `8000` is open to customers to launch the vLLM server.
-The `api-key` is also defined by yourself. In this example, we define it as `abc-123`. My current vLLM server is launched as below:
-
-![vLLM server launch command](image/img4.png)
+The `api-key` is also defined by yourself. In this example, we define it as `abc-123`. 
 
 Once you see the below information, that means your vLLM server has been launched successfully:
 
