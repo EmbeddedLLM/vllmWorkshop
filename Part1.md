@@ -50,7 +50,7 @@ You can test if the vLLM server works from your laptop.
 In your laptop's command prompt, input the command with the obtained IP address (replace the example URL with your specific one):
 
 ```bash
-curl [http://llmcluster.embeddedllm.com/serve/1/v1/models](https://www.google.com/search?q=http://llmcluster.embeddedllm.com/serve/1/v1/models) -H "Authorization: Bearer abc-123"
+curl http://llmcluster.embeddedllm.com/serve/1/v1/models -H "Authorization: Bearer abc-123"
 ```
 
 If you see the below output, that means your vLLM server on the **MI300x** has been set up successfully:
