@@ -4,7 +4,11 @@ Welcome to this hands-on workshop! In this section, we will set up a **Deepseek-
 
 ## Step 1: Access MI300x GPU
 
-In this workshop, we will use the **MI300x** cloud instance from Hot Isle servers. Please access your GPU instance link, which has been provided by this workshop. For myself, this instance has been assigned to me: [http://llmcluster.embeddedllm.com/user/1](http://llmcluster.embeddedllm.com/user/1).
+In this workshop, we will use the **MI300x** cloud instance from Hot Isle servers. Please access your GPU instance link, which has been provided by this workshop. 
+
+Go to http://miaccess.embeddedllm.com and enter your name to get assigned for a MI300X jupyter notebook session.
+
+For myself, this instance has been assigned to me: [http://llmcluster.embeddedllm.com/user/80](http://llmcluster.embeddedllm.com/user/80).
 
 After clicking it, you will find the below snapshot:
 
@@ -31,7 +35,6 @@ vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-32B \
     --host 0.0.0.0 \
     --port 8000 \
     --api-key abc-123 \
-    --trust-remote-code \
     --seed 42
 ````
 
